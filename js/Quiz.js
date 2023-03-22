@@ -50,9 +50,10 @@ class Quiz {
       for(var plr in allContestants){
         debugger;
         var correctAns = "3";
-//verifique se a condição para a resposta dos jogadores e a resposta correta são iguais
-//se for igual preencha com verde
-//se não preencha com vermelho
+if(correctAns === allContestants[plr].answer)
+  fill("green");
+        else
+          fill("red");
         
 
         display_Answers+=30;
